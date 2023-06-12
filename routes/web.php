@@ -35,7 +35,11 @@ Route::get('/listings/create', [ListingController::class, 'create']);
 
 Route::post('/listings', [ListingController::class, 'store']);
 
+// Show Edit Form
+
+Route::get('/listings/{listing}/edit', [ListingController::class, 'edit']);
+
+
 // Single Listing **Very important note we want the single listing to stay at the bottom on purpose!
 
 Route::get('/listings/{listing}', [ListingController::class, 'show']);
-

@@ -12,4 +12,8 @@
 @else
     <p> No listings found </p>
 @endunless
+<!-- literally added navigation just by adding the the bottom div -->
+<div class="mt-6 p-4">
+    {{$listings->links()}}
+</div>
 </x-layout>

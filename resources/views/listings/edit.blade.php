@@ -97,7 +97,7 @@
                     Job Description
                 </label>
                 <textarea class="border border-gray-200 rounded p-2 w-full" name="description" rows="10"
-                    placeholder="Include tasks, requirements, salary, etc">value="{{$listing->description}}"</textarea>
+                    placeholder="Include tasks, requirements, salary, etc">{{$listing->description}}</textarea>
 
                 @error('description')
                     <p class="text-red-500 text-xs mt-1">{{$message}}</p>
@@ -106,7 +106,7 @@
 
             <div class="mb-6">
                 <button class="bg-laravel text-white rounded py-2 px-4 hover:bg-black">
-                    Create Gig
+                    Update Gig
                 </button>
 
                 <a href="/" class="text-black ml-4"> Back </a>
